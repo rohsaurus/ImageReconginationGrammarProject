@@ -33,7 +33,7 @@ args = vars(ap.parse_args())
 
 # initialize the number of epochs to train for, initial learning rate,
 # and batch size
-EPOCHS = 50
+EPOCHS = 10
 INIT_LR = 1e-1
 BS = 128
 
@@ -111,6 +111,9 @@ H = model.fit(
 # define the list of label names
 labelNames = "0123456789"
 labelNames += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#labelNames += "abcdefghijklmnopqrstuvwxyz"
+#labelNames += ".,"
+
 labelNames = [l for l in labelNames]
 
 # evaluate the network

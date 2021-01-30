@@ -9,6 +9,7 @@ import argparse
 import imutils
 import cv2
 
+
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
@@ -97,7 +98,11 @@ preds = model.predict(chars)
 # define the list of label names
 labelNames = "0123456789"
 labelNames += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#labelNames += "abcdefghijklmnopqrstuvwxyz"
+#labelNames += ".,"
+
 labelNames = [l for l in labelNames]
+label_str = ''
 
 # loop over the predictions and bounding box locations together
 for (pred, (x, y, w, h)) in zip(preds, boxes):
@@ -106,6 +111,8 @@ for (pred, (x, y, w, h)) in zip(preds, boxes):
 	i = np.argmax(pred)
 	prob = pred[i]
 	label = labelNames[i]
+	print(label)
+	label_str = label_str + label
 
 	# draw the prediction on the image
 	print("[INFO] {} - {:.2f}%".format(label, prob * 100))
@@ -118,18 +125,3 @@ for (pred, (x, y, w, h)) in zip(preds, boxes):
 	cv2.waitKey(0)
 
 
-# grammar bot api
-import requests
-
-url = "https://grammarbot.p.rapidapi.com/check"
-
-payload = "text=Bad%20grammaR%20be%20Like&language=en-US"
-headers = {
-	'content-type': "application/x-www-form-urlencoded",
-	'x-rapidapi-key': "845e3efcbcmshf825229e147b53ep102a27jsn47d93993a6ae",
-	'x-rapidapi-host': "grammarbot.p.rapidapi.com"
-}
-
-response = requests.request("POST", url, data=payload, headers=headers)
-
-print(response.text)
