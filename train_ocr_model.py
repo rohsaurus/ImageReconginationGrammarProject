@@ -24,11 +24,11 @@ import cv2
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-a", "--az", required=True,
-                help="C:/Users/Rohan/PycharmProjects/ImageReconginationGrammarProject/a_z_handwritten_data.csv")
+                help="path for handwriting data model")
 ap.add_argument("-m", "--model", type=str, required=True,
-                help="C:/Users/Rohan/PycharmProjects/ImageReconginationGrammarProject/handwriting.model")
+                help="path for model output")
 ap.add_argument("-p", "--plot", type=str, default="plot.png",
-                help="C:/Users/Rohan/PycharmProjects/ImageReconginationGrammarProject/plot.png")
+                help="path to plot")
 args = vars(ap.parse_args())
 
 # initialize the number of epochs to train for, initial learning rate,

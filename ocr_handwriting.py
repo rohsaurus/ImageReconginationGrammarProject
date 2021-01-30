@@ -12,9 +12,11 @@ import cv2
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
-	help="path to input image")
+	help="images/umbc_address.png")
+print('1')
 ap.add_argument("-m", "--model", type=str, required=True,
-	help="path to trained handwriting recognition model")
+	help="C:/Users/Rohan/PycharmProjects/ImageReconginationGrammarProject/handwriting.model")
+print('2')
 args = vars(ap.parse_args())
 
 # load the handwriting OCR model
@@ -114,3 +116,20 @@ for (pred, (x, y, w, h)) in zip(preds, boxes):
 	# show the image
 	cv2.imshow("Image", image)
 	cv2.waitKey(0)
+
+
+# grammar bot api
+import requests
+
+url = "https://grammarbot.p.rapidapi.com/check"
+
+payload = "text=Bad%20grammaR%20be%20Like&language=en-US"
+headers = {
+	'content-type': "application/x-www-form-urlencoded",
+	'x-rapidapi-key': "845e3efcbcmshf825229e147b53ep102a27jsn47d93993a6ae",
+	'x-rapidapi-host': "grammarbot.p.rapidapi.com"
+}
+
+response = requests.request("POST", url, data=payload, headers=headers)
+
+print(response.text)
