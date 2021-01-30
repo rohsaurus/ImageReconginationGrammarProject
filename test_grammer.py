@@ -1,16 +1,25 @@
 import language_check
+from google.cloud import vision
+from pdfminer import input_for_text
 tool = language_check.LanguageTool('en-US')
-text = u'A sentence with a error in the Hitchhiker’s Guide tot he Galaxy'
+text = input_for_text
 matches = tool.check(text)
-print('# of suggestions found: ', len(matches))
+print('Total # of suggestions found: ', len(matches))
+print("\n \n")
 #print(matches[1])
 counter = 0
+TGREEN =  '\033[32m' # Green Text
+TRED =  '\033[31m' # Red Text
+
+ENDC = '\033[m'
 for x in matches:
     print('--------------------------------------------------------------------------------------------')
-    print('Suggestion: ', counter)
-    print('Original sentence: ', x.context)
-    print( ' '*(x.contextoffset +19),'^^^^^^')
-    print('Suggestion: ', x.msg)
+    # print("\033[0;37;40m Normal text\n")
+    print(TGREEN +'Suggestion: ', ENDC, counter)
+    print(TGREEN + 'Original sentence: ', ENDC, x.context)
+    print( TRED, ' '*(x.contextoffset +19),'^^^^^^', ENDC)
+    print(TGREEN,'Suggestion category: ', ENDC, x.category)
+    print(TGREEN,'Suggestion: ', ENDC, x.msg)
     counter = counter+1
 
 

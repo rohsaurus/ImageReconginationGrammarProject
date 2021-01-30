@@ -33,7 +33,7 @@ args = vars(ap.parse_args())
 
 # initialize the number of epochs to train for, initial learning rate,
 # and batch size
-EPOCHS = 10
+EPOCHS = 1
 INIT_LR = 1e-1
 BS = 128
 
