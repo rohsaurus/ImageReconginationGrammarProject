@@ -1,8 +1,9 @@
 import language_check
 from google.cloud import vision
 from pdfminer import input_for_text
+from cloud_vision import input_for_text_vis
 tool = language_check.LanguageTool('en-US')
-text = input_for_text
+text = input_for_text_vis
 matches = tool.check(text)
 print('Total # of suggestions found: ', len(matches))
 print("\n \n")

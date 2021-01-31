@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cedar-amulet-303322",
+  "private_key_id": "caef94d8cc1db3a55b1d4a0bea4d3c070e9beefa",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCt9lhlvaoq8pE4\nROnkifDzvx98lGHwHc5V7kPmL2JQFnl2cvh2CD2b1fqVQPclTbc4icFjidmRMtlE\nu1NfCfRG8KTjWlkAQkUCJTnG8EhXQ90aGuue0yHtBm9GKyJRlR5yoQXQ3VD8tdsR\nmKfoxeFYYqlYFiUqXp7HtgL29GAQb0qUvieCoGTY/SNOiP+RGrjFAA9aQ3GrhvCR\nGe8xYGZX0sZgdzLRjYwJZBX8K4pfy0oL9ogPtS7e1VuJW6+lsJk5mPlkEKqExzDJ\nY6XL4TLCNSP9y7s2aE/CmiZMEC735Y7Le9R/UVBL7+BZcYtxJLz7iefVcIUwtiaj\nmvhv05GTAgMBAAECggEAURCALdz9rKi/Yjy+z3g2N6eC2S9eGiIRkjqHGn9PLWnj\nrP4zaPE7IGDMtfuBj7kQ3cBXxXYp0/8hfuVaGuoNEne2Jpnl6nh3JuJI87rpwvyF\nTlJoJOlXIFhExyp3ghPejeUaTDOtty1ZSfBcolx/v4uuRTWAmSdhj0fyRrknANDO\nQyXIrywuXIW82DA0ggPRJf+b/SxZ78rmYuAUGFzuGiLi+nw9r3+JlASguWGnQRFv\nKjIXIJ+64Lmd/M1+P0rff/HW6IIfKP4U0hBqixx82XTz2CGsstnJz7WXGe8MN63e\ndjpyFz2IeMks79YlQ3bD8eigePnyWxMgiwpHzSSFMQKBgQDmDmy0cx8+ChUoDwuv\ne9mIRZuXl5nkN7viJxQ4fZ8EQcTy4NBF9lTqVWk/lxHjbMer9HlWXRZYonwSyW67\nEXD4RD8Sqxuhws9pY8Rke3jhiO5eRq3UYKtRaPWuc0aZlaz2oPKSkiqFobRv/5SO\n5r38xxDkxixlSM2H9Phm450DowKBgQDBlIWmM/2nV0X0njVHlMwTMIB0A+SLSMIj\n0ir5enS9z+IrL436KnbRNfzijteiSnfT3Fsrsr0vnY2j2R+y7sNA/NnKmriOfyga\nFOIa+M8nueit8Qtk9YeB0YfxnLEBKBy85diIfUsS65GrLg8wX5mCFIWZclHSvFHB\n6JkQY7OZUQKBgQCMrvOA4gmP+cB4T8MYnAcp009Tw4yDSCXoJXezF/b/Nm0HDb2v\nmvTQnEyRa4Ov7Nyp5gWxb5lzuGFhZ7cERKUt3SYo92QdZrFJxI3b2LnSSddi5Zv1\njOwXC7V56dqZnzM3WrMcOLAyKfHar5OcU7SI+P72t818Xqn5Yy/oU3a4OwKBgQCL\nRP16e8EsGZ/cw831N9oynBxuWzab9ral6ti8MBu5S8yd4VK1/sMI9VyA6t+8hPL8\n23ZEVA3EKgfzL4ycwSZ8pO1T1EifTGBfk1KwsPzoydna+qaF9heNkF/Ltj2qZV93\nj61fVTUj4ZMloreOx9i7O2R650Jy6MWxSlSE9BYMYQKBgE4aYl5Pmfo4I7AVO9pG\nYGfe7w6PloUeAccKvMDawJOspJkGd2pmcCyDnQ1uJvJ8jWUQci4z9BeVwzKNB3ZN\nV4Jl5CFxLcjiUJEmsvtFVcGuqi7h357M2/cXAUQ4hr35Wr47CH6sszZeVGoKzmas\nNHWbPeAD2Psv7OAEhvrGGx0j\n-----END PRIVATE KEY-----\n",
+  "client_email": "medium-vision-api@cedar-amulet-303322.iam.gserviceaccount.com",
+  "client_id": "108336764942428919025",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/medium-vision-api%40cedar-amulet-303322.iam.gserviceaccount.com"
+}
