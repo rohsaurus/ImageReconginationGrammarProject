@@ -29,4 +29,5 @@ def detect_text(path):
             'https://cloud.google.com/apis/design/errors'.format(
                 response.error.message))
     return testing
-input_for_text_vis = detect_text(r"C:\Users\Rohan\PycharmProjects\ImageReconginationGrammarProject\essay.png")
+text123 = detect_text(r"rocketbook.jpg")
+print(text123)
