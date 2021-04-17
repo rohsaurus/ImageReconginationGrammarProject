@@ -29,5 +29,5 @@ def detect_text(path):
             'https://cloud.google.com/apis/design/errors'.format(
                 response.error.message))
     return testing
-text123 = detect_text(r"rocketbook.jpg")
+text123 = detect_text(r"essay.png")
 print(text123)
