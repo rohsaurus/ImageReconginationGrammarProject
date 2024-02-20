@@ -30,3 +30,7 @@ What's Next:
 We're constantly innovating to expand Gaze's functionalities. Our future vision includes integrating advanced summarization techniques and exploring the potential for language style customization.
 
 We invite you to try Gaze and experience the power of AI-powered writing assistance!
+
+
+![image](https://github.com/rohsaurus/ImageReconginationGrammarProject/assets/55811427/16136ac5-e53e-43a9-8e00-75c05cdda6b8)
+A quick glance at how grammar suggestions show up. 
